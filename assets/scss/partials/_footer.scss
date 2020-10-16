@@ -1,0 +1,43 @@
+footer {
+    background-color: #000;
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem 1rem 2rem;
+        .brand {
+            padding: 2rem 0;
+            text-align: center;
+            order: 2;
+        }
+        .info-footer {
+            color: #fff;
+            order: 0;
+            text-align: end;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .firma {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1140px) {
+    footer {
+        .container {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .brand {
+                order: 0;
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+}

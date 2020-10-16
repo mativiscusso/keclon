@@ -1,0 +1,178 @@
+#contacto {
+    background-color: $grisOscuro;
+    .titulo-section {
+        width: 100%;
+        padding: 1rem 0rem;
+        background-color: $verde;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        text-transform: capitalize;
+    }
+}
+
+#contacto form {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+#contacto form label,
+input,
+textarea {
+    border: 0;
+    border-radius: 1rem;
+    color: white;
+}
+#contacto form input,
+textarea {
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    border: #fff solid 1px;
+    background-color: transparent;
+}
+#contacto form textarea {
+    padding: 0.5rem 1rem;
+}
+#contacto form #btnForm {
+    background-color: transparent;
+    border: #fff solid 2px;
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+    width: 35%;
+    transition: all 300ms ease-in;
+}
+#contacto form #btnForm:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $verde;
+}
+#contacto form input:focus,
+textarea:focus {
+    border: 2px solid $verde;
+    border-radius: 1rem;
+}
+
+//? BUTTON FORM CONTACTo
+.btnForm {
+    top: 0;
+    left: 0;
+    transition: all 0.05s linear 0s;
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #ffe800;
+    text-transform: uppercase;
+    color: #404040;
+    font-family: arial;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.btnForm:active {
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 #404040;
+}
+.btnForm:active::after {
+    top: 1px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+}
+.btnForm:active::before {
+    bottom: -2px;
+    right: 1px;
+    width: 4px;
+    height: 4px;
+}
+.btnForm::after {
+    transition: all 0.05s linear 0s;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #404040;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.btnForm::before {
+    transition: all 0.05s linear 0s;
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #404040;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+a.btnForm {
+    position: relative;
+}
+
+a:active.btnForm {
+    top: 6px;
+    left: -6px;
+    box-shadow: none;
+}
+a:active.btnForm:before {
+    bottom: 1px;
+    right: 1px;
+}
+a:active.btnForm:after {
+    top: 1px;
+    left: 1px;
+}
+#my-form-status {
+    font-size: 1.5rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #contacto form {
+        width: 70%;
+    }
+    #contacto form input,
+    textarea {
+        padding: 0 1rem;
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #contacto form {
+        width: 40%;
+        margin-left: 3rem;
+    }
+    #contacto .container {
+        display: flex;
+    }
+    #contacto .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+    }
+    #contacto .form-group:last-child {
+        margin-left: 5%;
+    }
+    #contacto form input,
+    textarea {
+        padding: .3rem;
+        font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+}

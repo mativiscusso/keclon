@@ -1,12 +1,13 @@
 header {
-    background-image: url('../img/background-header-keclon-min.jpg');
+    background-image: url("../img/background-header-keclon-min.jpg");
     background-size: cover;
+    background-position: center;
     height: 180vh;
     position: relative;
     .titulo-header {
-        background-color: #000;
+        background-color: $negroTransparencia;
         width: 90%;
-        padding: 1rem;
+        padding: 1rem 1rem 2.5rem 1rem;
         position: absolute;
         top: 20%;
         left: 0;
@@ -15,8 +16,16 @@ header {
         color: #fff;
         font-size: 1.4rem;
         font-weight: bold;
-        border-right: $verde solid 5px;
-        border-bottom: $verde solid 5px;
+        .rectangulo-titulo {
+            background-color: $verde;
+            width: 90%;
+            height: 30px;
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     }
     .la-empresa {
         h2 {
@@ -42,5 +51,66 @@ header {
         padding: 1rem;
         color: #fff;
         font-size: 1.2rem;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        .logo-mobile {
+            width: 25%;
+            padding: 0.5rem;
+            top: 5px;
+        }
+        .titulo-header {
+            font-size: 1.8rem;
+            width: 65%;
+            line-height: 2.5rem;
+        }
+        .la-empresa {
+            h2 {
+                padding: 1rem;
+            }
+            font-size: 1.8rem;
+            width: 65%;
+            line-height: 2.5rem;
+            padding: 2rem;
+        }
+    }
+}
+@media (min-width: 1140px) {
+    header {
+        .logo-mobile {
+            display: none;
+        }
+        .logo-desktop {
+            width: 8%;
+            top: 15px;
+            left: 20px;
+        }
+        .titulo-header {
+            top: 24%;
+            font-size: 1.6rem;
+            width: 50%;
+            padding: 2rem;
+        }
+        .la-empresa {
+            h2 {
+                width: 70%;
+            }
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            padding-top: 3rem;
+        }
+    }
+}
+@media (min-width: 1400px) {
+    header {
+        .titulo-header {
+            width: 45%;
+            padding: 3rem;
+            top: 23%;
+        }
+        .la-empresa {
+            padding: 3rem;
+        }
     }
 }

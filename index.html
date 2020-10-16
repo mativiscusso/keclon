@@ -15,8 +15,11 @@
         <nav class="header">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <span id="logo-menu">
+                <img src="assets/img/logo.png" class="no-shadow logo-mobile" alt="keclon">
+            </span>
             <ul class="menu">
-                <span id="logo-menu">
+                <span id="logo-menu" class="logo-desktop">
                     <img src="assets/img/logo.png" class="no-shadow" alt="keclon">
                 </span>
                 <li><a title="home" href="/">Home</a></li>
@@ -29,16 +32,23 @@
         </nav>
         <!-- Menu -->
 
-        <div class="titulo-header">Somos líderes en innovación para el desarrollo de enzimas y procesos biotecnológicos que mejoran el rendimiento industrial sin dañar el medio ambiente.</div>
+        <div class="titulo-header">Somos líderes en innovación para el desarrollo de enzimas y procesos biotecnológicos
+            que mejoran el rendimiento industrial sin dañar el medio ambiente.
+            <div class="rectangulo-titulo"></div>
+        </div>
         <div class="la-empresa">
             <h2>la empresa</h2>
-            <p>Somos una empresa fundada por científicos argentinos dedicada al diseño, producción y comercialización de enzimas bajo los más exigentes estándares de calidad internacional.
+            <p>Somos una empresa fundada por científicos argentinos dedicada al diseño, producción y comercialización de
+                enzimas bajo los más exigentes estándares de calidad internacional.
             </p>
             <br>
-            <p>Brindamos soluciones para las industrias de la alimentación humana, nutrición animal, aceites comestibles y biodiesel en Latinoamérica y otros mercados emergentes.
+            <p>Brindamos soluciones para las industrias de la alimentación humana, nutrición animal, aceites comestibles
+                y biodiesel en Latinoamérica y otros mercados emergentes.
             </p>
             <br>
-            <p>Ser la empresa argentina con mayor cantidad de registros de propiedad intelectual en la última década refleja nuestro compromiso con la innovación como medio para generar valor agregado a nuestros clientes.</p>
+            <p>Ser la empresa argentina con mayor cantidad de registros de propiedad intelectual en la última década
+                refleja nuestro compromiso con la innovación como medio para generar valor agregado a nuestros clientes.
+            </p>
         </div>
     </header>
     <main>
@@ -56,7 +66,9 @@
                             evolución dirigida.
                         </p>
                     </div>
-                    <img src="assets/img/quehacemos1.jpg" />
+                    <div class="bg-white"></div>
+                    <img src="assets/img/quehacemos1-mobile.jpg" class="img-mobile" />
+                    <img src="assets/img/quehacemos1.jpg" class="img-desktop" />
                     <label for="ss2-item-3" class="slideshow--nav slideshow--nav-previous">Go to slide 3</label>
                     <label for="ss2-item-2" class="slideshow--nav slideshow--nav-next">Go to slide 2</label>
                 </div>
@@ -69,7 +81,9 @@
                             artificiales por enzimas biodegradables que reducen la emisión de dióxido de carbono,
                             ahorrando energía y reduciendo el consumo de agua y otros recursos esenciales.</p>
                     </div>
-                    <img src="assets/img/quehacemos2.jpg" />
+                    <div class="bg-white"></div>
+                    <img src="assets/img/quehacemos2-mobile.jpg" class="img-mobile" />
+                    <img src="assets/img/quehacemos2.jpg" class="img-desktop" />
                     <label for="ss2-item-1" class="slideshow--nav slideshow--nav-previous">Go to slide 1</label>
                     <label for="ss2-item-3" class="slideshow--nav slideshow--nav-next">Go to slide 3</label>
                 </div>
@@ -81,14 +95,18 @@
                         <p>Nuestras enzimas mejoran el rendimiento de los procesos industriales maximizando el retorno
                             para nuestros clientes</p>
                     </div>
-                    <img src="assets/img/quehacemos3.JPG" />
+                    <div class="bg-white"></div>
+                    <img src="assets/img/quehacemos3-mobile.jpg" class="img-mobile" />
+                    <img src="assets/img/quehacemos3.jpg" class="img-desktop" />
                     <label for="ss2-item-2" class="slideshow--nav slideshow--nav-previous">Go to slide 2</label>
                     <label for="ss2-item-4" class="slideshow--nav slideshow--nav-next">Go to slide 4</label>
                 </div>
 
                 <input type="radio" name="ss2" id="ss2-item-4" class="slideshow--bullet" />
                 <div class="slideshow--item">
-                    <img src="assets/img/quehacemos4.JPG" />
+                    <div class="bg-white"></div>
+                    <img src="assets/img/quehacemos4-mobile.jpg" class="img-mobile" />
+                    <img src="assets/img/quehacemos4.jpg" class="img-desktop" />
                     <div class="text-slide">
                         <h2>PRODUCCIÓN</h2>
                         <p>Estamos construyendo la mayor planta de fermentación de enzimas de Sudamérica asegurando la
@@ -101,13 +119,295 @@
 
             </div>
         </div>
-        <div id="productos"></div>
-        <div id="equipo"></div>
-        <div id="prensa"></div>
-        <div id="contacto"></div>
+        <div id="productos">
+            <div class="titulo-section">
+                <h2>productos</h2>
+            </div>
+            <article>
+                <section class="productos-comestibles">
+                    <div class="texto-producto">
+                        <h3>aceites comestibles</h3>
+                        <a href="#popup-article3" class="open-popup">ver productos</a>
+                        <div id="popup-article3" class="popup">
+                            <div class="popup__block">
+                                <h1>Bio Refinería con Cero Residuo</h1>
+                                <p>Nuestros exclusivos tratamientos enzimáticos se combinan para brindar al productor de
+                                    aceite crudo una solución con Cero Residuo maximizando el valor agregado del
+                                    proceso.</p>
+                                <br>
+                                <p><strong>PLASEMIX™ </strong>ofrece una alternativa al desgomado acuoso convencional
+                                    alcanzando un rendimiento superior al 2% p/p con menores costos de refinación.
+                                    Nuestras fosfolipasas convierten a los fosfolípidos (PL) en diacilglicéridos que son
+                                    recuperados en la fase oleosa, liberando las cabezas polares que son separadas en
+                                    posteriores lavados con agua. Con la reducción del contenido de los PL, se minimiza
+                                    minimiza la formación de emulsiones y consecuentemente la cantidad de aceite
+                                    retenido
+                                    Alternativamente, las gomas obtenidas por desgomado acuoso también pueden ser
+                                    tratadas recuperando la fase oleosa mediante los diacilglicéridos obtenidos de la
+                                    hidrólisis de los fosfolípidos. </p>
+                                <br>
+                                <p><strong>TBD™ </strong>trata las gomas residuales (explicación) convirtiéndolas en
+                                    Inositol y Colina.</p>
+                                <br>
+                                <p><strong>OLEINZYME™</strong> está desarrollada para transformar distintos subproductos
+                                    de la industria aceitera como gomas, borras, o combinaciones de ambas en Oleína,
+                                    reduciendo significativamente el impacto ambiental y con características superiores
+                                    en comparación con el método químico tradicional que utiliza ácidos fuertes.</p>
+                                <br>
+                                <br>
+                                <p>Los productos de valor agregado obtenidos tienen múltiples usos industriales tales
+                                    como consumo en alimentación animal, síntesis de biodiesel de 2° generación,
+                                    combustibles de calderas o calefacción. con valores de mercado superiores a los de
+                                    las materias primas de origen.</p>
+                                </ul>
+                                <a href="#productos" class="popup__close">close</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="productos-biodiesel">
+                    <div class="texto-producto">
+                        <h3>biodiesel</h3>
+                        <a href="#popup-article4" class="open-popup">ver productos</a>
+                        <div id="popup-article4" class="popup">
+                            <div class="popup__block">
+                                <p>(breve descripcion)</p>
+                                <br>
+                                <p><strong>EGASE™ </strong>Nuestra novedosa Esterilglucosidasa para tratamiento de
+                                    biodiesel permite remover los esteril glucósidos, principales agentes causantes de
+                                    la formación de precipitados insolubles durante la transesterificación alcalina por
+                                    métodos tradicionales. Estos precipitados generan problemas de operativos durante la
+                                    producción y de calidad del biodiesel obtenido, provocando inconvenientes en el
+                                    funcionamiento de los motores.
+                                </p>
+                                <br>
+                                <p>Nuestro tratamiento, de bajo costo y alta eficiencia reduce el contenido de
+                                    contaminantes totales, mejora las propiedades de filtración en frío y la apariencia
+                                    visual (Haze) y puede aplicarse en los sistemas de producción más utilizados (Lurgi,
+                                    DesmetBallestra y otros), previo al secado final del biodiesel.
+                                </p>
+                                <a href="#productos" class="popup__close">close</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="productos-humana">
+                    <div class="texto-producto">
+                        <h3>alimentación humana</h3>
+                        <a href="#popup-article2" class="open-popup">ver productos</a>
+                        <div id="popup-article2" class="popup">
+                            <div class="popup__block">
+                                <p>(breve descripcion)</p>
+                                <br>
+                                <p><strong>QUIMOSINA </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Debitis nostrum laborum adipisci consectetur nam asperiores quisquam expedita quis
+                                    iste eaque!
+                                </p>
+                                <p><strong>LACTASA </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Debitis nostrum laborum adipisci consectetur nam asperiores quisquam expedita quis
+                                    iste eaque!
+                                </p>
+                                <a href="#productos" class="popup__close">close</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="productos-animal">
+                    <div class="texto-producto">
+                        <h3>alimentación animal</h3>
+                        <a href="#popup-article1" class="open-popup">ver productos</a>
+                        <div id="popup-article1" class="popup">
+                            <div class="popup__block">
+                                <p>(breve descripcion)</p>
+                                <br>
+                                <p><strong>FITASA </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Debitis nostrum laborum adipisci consectetur nam asperiores quisquam expedita quis
+                                    iste eaque!
+                                </p>
+                                <a href="#productos" class="popup__close">close</a>
+                            </div>
+                        </div>
+                </section>
+            </article>
+        </div>
+        <div id="equipo">
+            <div class="titulo-section">
+                <h2>equipo</h2>
+            </div>
+            <p class="subtitulo">Nuestro equipo combina reconocidos científicos con probada experiencia en innovación y
+                desarrollo en biotecnología; un management comprometido con el crecimiento del negocio e inversores
+                nacionales e internacionales de renombre con la visión estratégica para alcanzar nuestros objetivos.</p>
+            <div class="wrapper">
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+                <div class="integrante-equipo">
+                    <img src="./assets/img/equipo/bril.png " alt="integrante-equipo">
+                    <p class="nombre">Nombre y apellido</p>
+                    <p class="cargo">Director tor</p>
+                    <button>mas info</button>
+                </div>
+            </div>
+        </div>
+        <div id="prensa">
+            <div class="titulo-section">
+                <h2>prensa</h2>
+            </div>
+            <div class="center">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="card">
+                            <img src="assets/img/prensa1.png">
+                            <div class="content">
+                                <h1>BID</h1>
+                                <a href="https://publications.iadb.org/es/emprendimientos-de-base-cientifico-tecnologica-en-america-latina-importancia-desafios-y"
+                                    target="_blank">VER NOTA</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/prensa2.jpg">
+                            <div class="content">
+                                <h1>CONICET</h1>
+                                <a href="https://www.conicet.gov.ar/keclon-el-potencial-de-las-enzimas-al-servicio-de-la-industria/"
+                                    target="_blank">VER NOTA</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="assets/img/prensa1.png">
+                            <div class="content">
+                                <h1>OTRO</h1>
+                                <a href="">VER NOTA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <button class="active first"></button>
+                    <button class="second"></button>
+                    <button class="third"></button>
+                </div>
+            </div>
+        </div>
+        <div id="contacto">
+            <div class="titulo-section">
+                <h2>contacto</h2>
+            </div>
+            <form id="my-form" action="https://formspree.io/xaypolae" method="POST">
+                <div class="container">
+                    <div class="form-group">
+                        <label for="fullname">Nombre Completo
+                            <input type="text" name="fullName" required>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email
+                            <input type="email" name="email" required>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <label for="message">Mensaje
+                        <textarea name="message" id="" cols="30" rows="10" required></textarea>
+                    </label>
+                </div>
+                <input type="submit" value="Enviar" id="btnForm" class="btnForm">
+                <p id="my-form-status"></p>
+            </form>
+        </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <img src="assets/img/logo.png" class="no-shadow" alt="keclon">
+            </div>
+            <div class="info-footer">
+                <p>Benielli 523 - San Lorenzo - Santa Fe - Argentina (S2200BZJ)</p>
+                <p><strong><a href="mailto:contacto@keclon.com">contacto@keclon.com</a></strong></p>
+            </div>
+        </div>
+        <p class="firma">Realizado por &nbsp<a href="http://iandigitaltalent.com/es" target="_blank"
+                rel="noopener noreferrer"><img src="assets/img/puntoian-min-footer.png"
+                    alt="ian digital talent"></a></p>
+    </footer>
     <script src="assets/js/navbar.min.js"></script>
+    <script src="assets/js/multiCarousel.js"></script>
 </body>
 
 </html>

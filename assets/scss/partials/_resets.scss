@@ -8,7 +8,7 @@ $tipografiaRegular: 'Lato';
 $verde:#1fbe6c;
 $grisClaro:#808080;
 $grisOscuro:#606060;
-$negroTransparencia: rgba(0,0,0,0.8);
+$negroTransparencia: rgba(0,0,0,0.9);
 
 * {
     box-sizing: border-box;
@@ -18,6 +18,10 @@ $negroTransparencia: rgba(0,0,0,0.8);
   }
   body {
     font-family: $tipografiaRegular;
+  }
+  button {
+    background-color: transparent;
+    border: 0;
   }
   
   ul {
