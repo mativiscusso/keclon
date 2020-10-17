@@ -180,11 +180,12 @@
   }
   #logo-menu.fixed {
     display: block;
-    width: 7%;
+    width: 10%;
     position: absolute;
-    left: 30px;
+    left: 10px;
     align-self: center;
     padding: 1rem;
+    top: 0;
   }
 
   @keyframes fadein {

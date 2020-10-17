@@ -31,10 +31,12 @@
                 filter: grayscale(1);
             }
             .nombre {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             .cargo {
                 font-size: 1rem;
+                color: #000;
+                font-weight: bolder;
             }
         }
     }
@@ -50,6 +52,12 @@
 }
 @media (min-width: 1140px) {
     #equipo {
+        .subtitulo {
+            font-size: 1.2rem;
+            width: 80%;
+            margin: auto;
+            padding: 2rem;
+        }
         .wrapper {
             padding: 2rem 5rem;
             .integrante-equipo {
@@ -62,5 +70,4 @@
     }
 }
 @media (min-width: 1400px) {
-    
 }
