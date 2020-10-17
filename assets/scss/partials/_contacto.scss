@@ -133,7 +133,14 @@ a:active.btnForm:after {
 #my-form-status {
     font-size: 1.5rem;
 }
-
+#contacto::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -60px; 
+    height: 60px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #contacto form {

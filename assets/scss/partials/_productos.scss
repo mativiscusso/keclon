@@ -153,6 +153,15 @@
     padding: 0.2rem 0.5rem;
   }
 }
+#productos::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -60px; 
+  height: 60px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 @media (min-width: 768px) {
 }
 @media (min-width: 1140px) {

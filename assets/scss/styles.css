@@ -606,6 +606,15 @@ header .la-empresa h2 {
   transform: scale(1.3);
 }
 
+#queHacemos::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media (min-width: 768px) {
   #queHacemos .slideshow--item .img-desktop {
     display: block;
@@ -861,6 +870,15 @@ header .la-empresa h2 {
   padding: 0.2rem 0.5rem;
 }
 
+#productos::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 @media (min-width: 1140px) {
   #productos article {
     display: -webkit-box;
@@ -936,6 +954,15 @@ header .la-empresa h2 {
   font-size: 1rem;
   color: #000;
   font-weight: bolder;
+}
+
+#equipo::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
@@ -1083,6 +1110,15 @@ header .la-empresa h2 {
   border-radius: 100%;
   height: 0.5em;
   width: 0.5em;
+}
+
+#prensa::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 @media (min-width: 1140px) {
@@ -1257,6 +1293,15 @@ a:active.btnForm:after {
   font-size: 1.5rem;
 }
 
+#contacto::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #contacto form {
@@ -1305,6 +1350,15 @@ a:active.btnForm:after {
 
 footer {
   background-color: #000;
+}
+
+footer::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 footer .container {
