@@ -321,8 +321,9 @@ header {
   background-image: url("../img/background-header-keclon-min.jpg");
   background-size: cover;
   background-position: center;
-  height: 180vh;
+  height: 220vh;
   position: relative;
+  z-index: 100;
 }
 
 header .titulo-header {
@@ -475,8 +476,8 @@ header .la-empresa h2 {
 #queHacemos .slideshow--item .bg-white {
   width: 100%;
   height: 500px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, rgba(31, 190, 108, 0.4)), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(180deg, rgba(31, 190, 108, 0.4) 8%, rgba(255, 255, 255, 0.5) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, rgba(31, 190, 108, 0.85)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(0deg, rgba(31, 190, 108, 0.85) 8%, rgba(255, 255, 255, 0.5) 100%);
   position: absolute;
 }
 
@@ -499,7 +500,6 @@ header .la-empresa h2 {
   font-size: 1.2rem;
   width: 65%;
   z-index: 10;
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 1.5rem;
   padding: 1rem;
 }
@@ -745,7 +745,7 @@ header .la-empresa h2 {
 
 #productos .popup {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   display: none;
   position: fixed;
   top: 0;
@@ -1324,6 +1324,10 @@ footer .container .brand {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+footer .container .brand img {
+  width: 78%;
 }
 
 footer .container .info-footer {

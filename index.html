@@ -16,24 +16,34 @@
         <nav class="header">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <span id="logo-menu flip-in-hor-bottom">
-                <img src="assets/img/logo.png" class="no-shadow logo-mobile" alt="keclon">
-            </span>
-            <ul class="menu">
-                <span id="logo-menu" class="logo-desktop flip-in-hor-bottom">
-                    <img src="assets/img/logo.png" class="no-shadow flip-in-hor-bottom" alt="keclon">
+            <a href="#" class="item-menu">
+                <span id="logo-menu flip-in-hor-bottom">
+                    <img src="assets/img/logo.png" class="no-shadow logo-mobile" alt="keclon">
                 </span>
+            </a>
+            <ul class="menu">
+                <a href="#" class="item-menu">
+                    <span id="logo-menu" class="logo-desktop flip-in-hor-bottom">
+                        <img src="assets/img/logo.png" class="no-shadow flip-in-hor-bottom" alt="keclon">
+                    </span>
+                </a>
                 <li><a title="home" class="item-menu hvr-underline-from-left" href="/">Home</a></li>
-                <li><a data-scroll class="item-menu hvr-underline-from-left"title="queHacemos" href="#queHacemos">que hacemos</a></li>
-                <li><a data-scroll class="item-menu hvr-underline-from-left"title="productos" href="#productos">productos</a></li>
-                <li><a data-scroll class="item-menu hvr-underline-from-left"title="equipo" href="#equipo">equipo</a></li>
-                <li><a data-scroll class="item-menu hvr-underline-from-left"title="prensa" href="#prensa">prensa</a></li>
-                <li><a data-scroll class="item-menu hvr-underline-from-left"title="contacto" href="#contacto">Contacto</a></li>
+                <li><a data-scroll class="item-menu hvr-underline-from-left" title="queHacemos" href="#queHacemos">que
+                        hacemos</a></li>
+                <li><a data-scroll class="item-menu hvr-underline-from-left" title="productos"
+                        href="#productos">productos</a></li>
+                <li><a data-scroll class="item-menu hvr-underline-from-left" title="equipo" href="#equipo">equipo</a>
+                </li>
+                <li><a data-scroll class="item-menu hvr-underline-from-left" title="prensa" href="#prensa">prensa</a>
+                </li>
+                <li><a data-scroll class="item-menu hvr-underline-from-left" title="contacto"
+                        href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <!-- Menu -->
 
-        <div class="titulo-header fade-in">Somos líderes en innovación para el desarrollo de enzimas y procesos biotecnológicos
+        <div class="titulo-header fade-in">Somos líderes en innovación para el desarrollo de enzimas y procesos
+            biotecnológicos
             que mejoran el rendimiento industrial sin dañar el medio ambiente.
             <div class="rectangulo-titulo"></div>
         </div>
@@ -390,11 +400,14 @@
             </div>
         </div>
         <p class="firma">Realizado por &nbsp<a href="http://iandigitaltalent.com/es" target="_blank"
-                rel="noopener noreferrer"><img src="assets/img/puntoian-min-footer.png"
-                    alt="ian digital talent"></a></p>
+                rel="noopener noreferrer"><img src="assets/img/puntoian-min-footer.png" alt="ian digital talent"></a>
+        </p>
     </footer>
     <script defer src="assets/js/navbar.min.js"></script>
     <script defer src="assets/js/multiCarousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script defer>
+        var scroll = new SmoothScroll('a.item-menu[href*="#"]');
     </script>
 </body>
 

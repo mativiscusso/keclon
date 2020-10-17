@@ -31,7 +31,7 @@
         .bg-white {
             width: 100%;
             height: 500px;
-            background: linear-gradient(180deg, rgba(31,190,108,0.4) 8%, rgba(255,255,255,0.5) 100%);
+            background: linear-gradient(0deg, rgba(31,190,108,.85) 8%, rgba(255,255,255,0.5) 100%);
             position: absolute;
         }
         img {
@@ -54,7 +54,6 @@
             font-size: 1.2rem;
             width: 65%;
             z-index: 10;
-            background-color: rgba(255,255,255,0.2);
             border-radius: 1.5rem;
             padding:1rem;
         }
