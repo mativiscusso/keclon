@@ -41,14 +41,7 @@
         }
     }
 }
-#equipo::before { 
-    display: block; 
-    content: " "; 
-    margin-top: -60px; 
-    height: 60px; 
-    visibility: hidden; 
-    pointer-events: none;
-  }
+
 @media (min-width: 768px) {
     #equipo {
         .wrapper {
@@ -60,6 +53,14 @@
 }
 @media (min-width: 1140px) {
     #equipo {
+        &::before { 
+            display: block; 
+            content: " "; 
+            margin-top: -60px; 
+            height: 60px; 
+            visibility: hidden; 
+            pointer-events: none;
+          }
         .subtitulo {
             font-size: 1.2rem;
             width: 80%;

@@ -4,9 +4,10 @@ footer {
         content: " "; 
         margin-top: -60px; 
         height: 60px; 
-        visibility: hidden; 
+        background-color: $grisOscuro;
         pointer-events: none;
       }
+      padding-bottom: 1rem;
     background-color: #000;
     .container {
         display: flex;
@@ -17,13 +18,13 @@ footer {
             text-align: center;
             order: 2;
             img {
-                width: 78%;
+                width: 50%;
             }
         }
         .info-footer {
             color: #fff;
             order: 0;
-            text-align: end;
+            text-align: center;
             a {
                 color: #fff;
             }
@@ -46,6 +47,12 @@ footer {
             align-items: center;
             .brand {
                 order: 0;
+                img {
+                    width: 60%;
+                }
+            }
+            .info-footer {
+                text-align: end;
             }
         }
     }

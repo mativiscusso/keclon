@@ -138,8 +138,8 @@ a:active.btnForm:after {
     content: " "; 
     margin-top: -60px; 
     height: 60px; 
-    visibility: hidden; 
     pointer-events: none;
+    background-color: #fff;
   }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -164,6 +164,7 @@ a:active.btnForm:after {
     #contacto form {
         width: 40%;
         margin-left: 3rem;
+        padding: 3.5rem;
     }
     #contacto .container {
         display: flex;
