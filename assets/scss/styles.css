@@ -1037,6 +1037,9 @@ header .la-empresa {
   #equipo .wrapper .integrante-equipo img {
     width: 50%;
   }
+  #equipo .container-logos {
+    padding: 2rem 0;
+  }
   #equipo .container-logos img {
     width: 10%;
     height: auto;
@@ -1196,7 +1199,12 @@ header .la-empresa {
 }
 
 #contacto {
-  background-color: #606060;
+  background-image: url("../img/fondo-contacto.png");
+  background-size: cover;
+  -webkit-backdrop-filter: grayscale(1);
+          backdrop-filter: grayscale(1);
+  background-color: #404040;
+  background-position-y: bottom;
 }
 
 #contacto .titulo-section {

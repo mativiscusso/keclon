@@ -1,5 +1,9 @@
 #contacto {
-    background-color: $grisOscuro;
+    background-image: url("../img/fondo-contacto.png");
+    background-size: cover;
+    backdrop-filter: grayscale(1);
+    background-color: #404040;
+    background-position-y: bottom;
     .titulo-section {
         width: 100%;
         padding: 1rem 0rem;
