@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../fonts/Lato-Regular.ttf");
 }
 
@@ -103,7 +103,7 @@ label {
   position: fixed;
   width: 100%;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .header ul {
@@ -111,7 +111,7 @@ label {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   position: relative;
   width: 100%;
   z-index: -1;
@@ -143,7 +143,7 @@ label {
   max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* menu icon */
@@ -280,7 +280,7 @@ label {
     position: fixed;
     -webkit-box-shadow: 3px 3px 10px #0000001f;
             box-shadow: 3px 3px 10px #0000001f;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
     -webkit-animation: fadein 0.3s;
     /* Safari, Chrome and Opera > 12.1 */
     /* Firefox < 16 */
@@ -290,7 +290,7 @@ label {
   }
   #logo-menu.fixed {
     display: block;
-    width: 6%;
+    width: 8%;
     position: absolute;
     left: 10px;
     -ms-flex-item-align: center;
@@ -317,6 +317,18 @@ label {
   }
 }
 
+@media (min-width: 1180px) {
+  #logo-menu.fixed {
+    width: 10%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #logo-menu.fixed {
+    width: 8%;
+  }
+}
+
 header {
   background-image: url("../img/background-header-keclon-min.jpg");
   background-size: cover;
@@ -328,11 +340,11 @@ header {
 
 header .texto-header {
   position: relative;
-  padding-top: 20%;
+  padding-top: 50%;
 }
 
 header .titulo-header {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   width: 90%;
   padding: 1rem 1rem 2.5rem 1rem;
   position: relative;
@@ -341,15 +353,15 @@ header .titulo-header {
   margin: auto;
   color: #fff;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 header .titulo-header .rectangulo-titulo {
   background-color: #1fbe6c;
   width: 90%;
-  height: 30px;
+  height: 10px;
   position: absolute;
-  bottom: -15px;
+  bottom: -5px;
   left: 0;
   right: 0;
   margin: auto;
@@ -357,7 +369,7 @@ header .titulo-header .rectangulo-titulo {
 }
 
 header .la-empresa {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   width: 90%;
   position: relative;
   left: 0;
@@ -392,9 +404,15 @@ header .la-empresa {
     display: none;
   }
   header .logo-desktop {
-    width: 6%;
-    top: 15px;
-    left: 20px;
+    display: block;
+    width: 10%;
+    position: absolute;
+    left: 10px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 1rem;
+    top: 0;
   }
   header .titulo-header {
     top: 24%;
@@ -413,11 +431,17 @@ header .la-empresa {
 }
 
 @media (min-width: 1400px) {
+  header {
+    height: 100vh;
+  }
   header .la-empresa {
     padding: 3rem;
   }
   header .texto-header {
-    padding-top: 13%;
+    padding-top: 15%;
+  }
+  header .logo-desktop {
+    width: 8%;
   }
 }
 
@@ -478,12 +502,12 @@ header .la-empresa {
 #queHacemos .slideshow--item .text-slide {
   position: absolute;
   text-align: left;
-  top: 20%;
+  top: 5%;
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 1.2rem;
-  width: 65%;
+  font-size: 1rem;
+  width: 80%;
   z-index: 10;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -579,7 +603,7 @@ header .la-empresa {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.75);
   border-radius: 1em;
   -webkit-transition: 0.3s ease-out background, 0.3s ease-out transform;
   transition: 0.3s ease-out background, 0.3s ease-out transform;
@@ -621,7 +645,7 @@ header .la-empresa {
     width: 35%;
     font-size: 1.4rem;
     margin: 0;
-    top: 28%;
+    top: 23%;
     left: 10%;
   }
   #queHacemos .slideshow .slideshow--item img {
@@ -639,7 +663,7 @@ header .la-empresa {
   #queHacemos .slideshow .slideshow--item .text-slide {
     width: 35%;
     margin: 0;
-    top: 32%;
+    top: 29%;
     left: 12%;
     font-size: 1.6rem;
   }
@@ -863,7 +887,7 @@ header .la-empresa {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 0.2rem 0.5rem;
 }
 
@@ -908,14 +932,14 @@ header .la-empresa {
 }
 
 #equipo {
-  background-color: #808080;
+  background-color: #fff;
 }
 
 #equipo .titulo-section {
   width: 100%;
   padding: 1rem 0rem;
   background-color: #1fbe6c;
-  color: #fff;
+  color: #000;
   text-align: center;
   margin: auto;
   text-transform: capitalize;
@@ -923,7 +947,7 @@ header .la-empresa {
 
 #equipo .subtitulo {
   padding: 1rem;
-  color: #fff;
+  color: #000;
   text-align: center;
   padding: 1rem;
 }
@@ -942,7 +966,7 @@ header .la-empresa {
 
 #equipo .wrapper .integrante-equipo {
   width: 45%;
-  color: #fff;
+  color: #000;
   text-align: center;
   padding: 0.5rem;
 }
@@ -964,6 +988,23 @@ header .la-empresa {
   font-weight: bolder;
 }
 
+#equipo .container-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#equipo .container-logos img {
+  width: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 1rem;
+}
+
 @media (min-width: 768px) {
   #equipo .wrapper .integrante-equipo {
     width: 30%;
@@ -978,6 +1019,7 @@ header .la-empresa {
     height: 60px;
     visibility: hidden;
     pointer-events: none;
+    background-color: #fff;
   }
   #equipo .subtitulo {
     font-size: 1.2rem;
@@ -990,10 +1032,25 @@ header .la-empresa {
   }
   #equipo .wrapper .integrante-equipo {
     width: 25%;
+    margin-bottom: 1.5rem;
   }
   #equipo .wrapper .integrante-equipo img {
     width: 50%;
   }
+  #equipo .container-logos img {
+    width: 10%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  #equipo .subtitulo {
+    font-size: 1.3rem;
+  }
+}
+
+#prensa {
+  background-color: #808080;
 }
 
 #prensa .titulo-section {
@@ -1058,7 +1115,7 @@ header .la-empresa {
 }
 
 #prensa .card > .content {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.75);
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding: 1em;
@@ -1093,7 +1150,7 @@ header .la-empresa {
 
 #prensa .map > button {
   all: unset;
-  background: rgba(26, 26, 26, 0.9);
+  background: rgba(26, 26, 26, 0.75);
   cursor: pointer;
   margin: 0 0.125em;
   position: relative;
@@ -1107,7 +1164,7 @@ header .la-empresa {
 }
 
 #prensa .map > button.active:after {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.75);
   content: "";
   left: 50%;
   position: absolute;
@@ -1119,21 +1176,22 @@ header .la-empresa {
   width: 0.5em;
 }
 
-#prensa::before {
-  display: block;
-  content: " ";
-  margin-top: -60px;
-  height: 60px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 @media (min-width: 1140px) {
   #prensa .center {
     padding: 4rem 0 3rem 0;
   }
   #prensa .wrapper {
     width: 63rem;
+  }
+  #prensa::before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+    pointer-events: none;
+    background-color: #fff;
+    position: absolute;
   }
 }
 
@@ -1306,7 +1364,7 @@ a:active.btnForm:after {
   margin-top: -60px;
   height: 60px;
   pointer-events: none;
-  background-color: #fff;
+  background-color: #808080;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1350,7 +1408,7 @@ a:active.btnForm:after {
   }
   #contacto form input,
   textarea {
-    padding: .3rem;
+    padding: 0.3rem;
     font-size: 1.3rem;
     margin: 0.5rem 0;
   }

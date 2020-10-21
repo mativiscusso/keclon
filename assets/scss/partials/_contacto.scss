@@ -133,14 +133,14 @@ a:active.btnForm:after {
 #my-form-status {
     font-size: 1.5rem;
 }
-#contacto::before { 
-    display: block; 
-    content: " "; 
-    margin-top: -60px; 
-    height: 60px; 
+#contacto::before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
     pointer-events: none;
-    background-color: #fff;
-  }
+    background-color: $grisClaro;
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #contacto form {
@@ -156,7 +156,6 @@ a:active.btnForm:after {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -179,7 +178,7 @@ a:active.btnForm:after {
     }
     #contacto form input,
     textarea {
-        padding: .3rem;
+        padding: 0.3rem;
         font-size: 1.3rem;
         margin: 0.5rem 0;
     }

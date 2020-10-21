@@ -7,7 +7,7 @@ header {
     z-index: 100;
     .texto-header {
         position: relative;
-        padding-top: 20%;
+        padding-top: 50%;
     }
     .titulo-header {
         background-color: $negroTransparencia;
@@ -19,13 +19,13 @@ header {
         margin: auto;
         color: #fff;
         font-size: 1.1rem;
-        font-weight: bold;
+        font-weight: 600;
         .rectangulo-titulo {
             background-color: $verde;
             width: 90%;
-            height: 30px;
+            height: 10px;
             position: absolute;
-            bottom: -15px;
+            bottom: -5px;
             left: 0;
             right: 0;
             margin: auto;
@@ -71,9 +71,15 @@ header {
             display: none;
         }
         .logo-desktop {
-            width: 6%;
-            top: 15px;
-            left: 20px;
+            display: block;
+            width: 10%;
+            position: absolute;
+            left: 10px;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+            padding: 1rem;
+            top: 0;
         }
         .titulo-header {
             top: 24%;
@@ -93,14 +99,15 @@ header {
 }
 @media (min-width: 1400px) {
     header {
-        .titulo-header {
-
-        }
+        height: 100vh;
         .la-empresa {
             padding: 3rem;
         }
         .texto-header {
-            padding-top: 13%;
+            padding-top: 15%;
+        }
+        .logo-desktop {
+            width: 8%;
         }
     }
 }

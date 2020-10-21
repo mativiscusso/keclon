@@ -1,80 +1,78 @@
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/Lato-Regular.ttf');
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
 }
 
-
-$tipografiaRegular: 'Lato';
-$verde:#1fbe6c;
-$grisClaro:#808080;
-$grisOscuro:#606060;
-$negroTransparencia: rgba(0,0,0,0.9);
+$tipografiaRegular: "Lato";
+$verde: #1fbe6c;
+$grisClaro: #808080;
+$grisOscuro: #606060;
+$negroTransparencia: rgba(0, 0, 0, 0.75);
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5rem;
-  }
-  body {
-    font-family: $tipografiaRegular;
-  }
-  button {
-    background-color: transparent;
-    border: 0;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  #mainIndex {
-    background-color: white;
-  }
-  input:focus {
-    outline: 0;
-  }
-  textarea:focus {
-    outline: 0;
-  }
-  label {
-    display: flex;
-    flex-direction: column;
-  }
-  .w-50 {
-    width: 50% !important;
-  }
-  .w-75 {
-    width: 75% !important;
-  }
-  .w-100 {
-    width: 100% !important;
-  }
-  .pt-4 {
-    padding: 2rem 0 0 0 !important;
-  }
-  .py-4 {
-    padding: 2rem 0 !important;
-  }
-  .py-5 {
-    padding: 3rem 0 !important;
-  }
-  .text-center {
-    text-align: center !important;
-  }
-  .text-left {
-    text-align: left !important;
-  }
-  .text-dark {
-    color: #000 !important;
-  }
-  .d-flex {
-    display: flex;
-  }
-  .justify-center {
-    justify-content: center;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+body {
+  font-family: $tipografiaRegular;
+}
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+#mainIndex {
+  background-color: white;
+}
+input:focus {
+  outline: 0;
+}
+textarea:focus {
+  outline: 0;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.pt-4 {
+  padding: 2rem 0 0 0 !important;
+}
+.py-4 {
+  padding: 2rem 0 !important;
+}
+.py-5 {
+  padding: 3rem 0 !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-dark {
+  color: #000 !important;
+}
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}

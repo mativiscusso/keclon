@@ -10,7 +10,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color:$negroTransparencia;
+  background-color: $negroTransparencia;
   position: relative;
   width: 100%;
   z-index: -1;
@@ -26,7 +26,6 @@
   text-transform: uppercase;
   transition: all 300ms;
 }
-
 
 .header .logo {
   display: block;
@@ -180,7 +179,7 @@
   }
   #logo-menu.fixed {
     display: block;
-    width: 6%;
+    width: 8%;
     position: absolute;
     left: 10px;
     align-self: center;
@@ -196,5 +195,15 @@
     to {
       opacity: 1;
     }
+  }
+}
+@media (min-width: 1180px) {
+  #logo-menu.fixed {
+    width: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  #logo-menu.fixed {
+    width: 8%;
   }
 }
