@@ -99,6 +99,16 @@ label {
           justify-content: center;
 }
 
+.titulo-section {
+  width: 100% !important;
+  padding: 1rem 0rem !important;
+  background-color: #1fbe6c !important;
+  color: rgba(0, 0, 0, 0.75) !important;
+  text-align: center !important;
+  margin: auto !important;
+  text-transform: capitalize !important;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -296,7 +306,7 @@ label {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     top: 0;
   }
   @-webkit-keyframes fadein {
@@ -319,13 +329,16 @@ label {
 
 @media (min-width: 1180px) {
   #logo-menu.fixed {
-    width: 10%;
+    width: 13%;
+  }
+  .lenguaje {
+    color: #1fbe6c !important;
   }
 }
 
 @media (min-width: 1400px) {
   #logo-menu.fixed {
-    width: 8%;
+    width: 10%;
   }
 }
 
@@ -341,6 +354,7 @@ header {
 header .texto-header {
   position: relative;
   padding-top: 50%;
+  text-align: center;
 }
 
 header .titulo-header {
@@ -356,28 +370,9 @@ header .titulo-header {
   font-weight: 600;
 }
 
-header .titulo-header .rectangulo-titulo {
-  background-color: #1fbe6c;
-  width: 90%;
-  height: 10px;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 1000;
-}
-
-header .la-empresa {
-  background-color: rgba(0, 0, 0, 0.75);
-  width: 90%;
-  position: relative;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 1rem;
-  color: #fff;
+header .subtitulo-header {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -391,12 +386,6 @@ header .la-empresa {
     width: 65%;
     line-height: 2.5rem;
   }
-  header .la-empresa {
-    font-size: 1.8rem;
-    width: 50%;
-    line-height: 2.5rem;
-    padding: 2rem;
-  }
 }
 
 @media (min-width: 1140px) {
@@ -405,28 +394,27 @@ header .la-empresa {
   }
   header .logo-desktop {
     display: block;
-    width: 10%;
+    width: 13%;
     position: absolute;
     left: 10px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     top: 0;
   }
   header .titulo-header {
     top: 24%;
     font-size: 1.4rem;
-    width: 50%;
-    padding: 3rem;
+    width: 70%;
+    padding: 1rem;
   }
-  header .la-empresa {
+  header .subtitulo-header {
     font-size: 1.2rem;
-    line-height: 1.4rem;
-    padding-top: 2.5rem;
+    line-height: 1.5;
   }
   header .texto-header {
-    padding-top: 11%;
+    padding-top: 18%;
   }
 }
 
@@ -434,14 +422,18 @@ header .la-empresa {
   header {
     height: 100vh;
   }
-  header .la-empresa {
-    padding: 3rem;
+  header .titulo-header {
+    font-size: 1.8rem;
+    padding: 2rem;
   }
-  header .texto-header {
-    padding-top: 15%;
+  header .subtitulo-header {
+    font-size: 1.5rem;
   }
   header .logo-desktop {
-    width: 8%;
+    width: 10%;
+  }
+  header .texto-header {
+    padding-top: 19%;
   }
 }
 
@@ -485,8 +477,8 @@ header .la-empresa {
 #queHacemos .slideshow--item .bg-white {
   width: 100%;
   height: 500px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, rgba(31, 190, 108, 0.85)), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(0deg, rgba(31, 190, 108, 0.85) 8%, rgba(255, 255, 255, 0.5) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, rgba(92, 255, 171, 0.8)), to(rgba(255, 255, 255, 0.7)));
+  background: linear-gradient(0deg, rgba(92, 255, 171, 0.8) 8%, rgba(255, 255, 255, 0.7) 100%);
   position: absolute;
 }
 
@@ -506,16 +498,18 @@ header .la-empresa {
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 1rem;
+  font-size: 1.1rem;
   width: 80%;
   z-index: 10;
   border-radius: 1.5rem;
   padding: 1rem;
+  font-weight: bolder;
 }
 
 #queHacemos .slideshow--item .text-slide h2 {
   padding: 0.5rem 0;
   line-height: 1;
+  font-weight: bold;
 }
 
 #queHacemos .slideshow--bullet:checked + .slideshow--item {
@@ -642,20 +636,22 @@ header .la-empresa {
     height: 700px;
   }
   #queHacemos .slideshow .slideshow--item .text-slide {
-    width: 35%;
-    font-size: 1.4rem;
+    width: 65%;
+    font-size: 1.5rem;
     margin: 0;
-    top: 23%;
+    top: 25%;
     left: 10%;
   }
-  #queHacemos .slideshow .slideshow--item img {
+  #queHacemos .slideshow .slideshow--item img,
+  #queHacemos .slideshow .slideshow--item video {
     height: 700px;
   }
   #queHacemos .slideshow .slideshow--item .bg-white {
     height: 700px;
   }
   #queHacemos .slideshow .slideshow--bullet {
-    margin-top: 650px;
+    display: none;
+    margin-top: 350px;
   }
 }
 
@@ -663,9 +659,9 @@ header .la-empresa {
   #queHacemos .slideshow .slideshow--item .text-slide {
     width: 35%;
     margin: 0;
-    top: 29%;
+    top: 32%;
     left: 12%;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -1002,7 +998,14 @@ header .la-empresa {
   width: 25%;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 1rem;
+}
+
+#equipo .text-center-logos {
+  padding-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  text-shadow: 1px 2px 1px rgba(77, 211, 24, 0.4);
 }
 
 @media (min-width: 768px) {
@@ -1031,7 +1034,7 @@ header .la-empresa {
     padding: 2rem 5rem;
   }
   #equipo .wrapper .integrante-equipo {
-    width: 25%;
+    width: 20%;
     margin-bottom: 1.5rem;
   }
   #equipo .wrapper .integrante-equipo img {
@@ -1043,12 +1046,23 @@ header .la-empresa {
   #equipo .container-logos img {
     width: 10%;
     height: auto;
+    padding: 1rem;
+  }
+  #equipo .text-center-logos {
+    padding-top: 2rem;
+    font-size: 1.4rem;
   }
 }
 
 @media (min-width: 1400px) {
   #equipo .subtitulo {
     font-size: 1.3rem;
+  }
+  #equipo .wrapper {
+    padding: 2rem 7rem;
+  }
+  #equipo .text-center-logos {
+    font-size: 1.6rem;
   }
 }
 

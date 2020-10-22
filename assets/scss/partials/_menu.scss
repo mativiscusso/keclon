@@ -183,7 +183,7 @@
     position: absolute;
     left: 10px;
     align-self: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     top: 0;
   }
 
@@ -199,11 +199,14 @@
 }
 @media (min-width: 1180px) {
   #logo-menu.fixed {
-    width: 10%;
+    width: 13%;
+  }
+  .lenguaje {
+    color: $verde !important;
   }
 }
 @media (min-width: 1400px) {
   #logo-menu.fixed {
-    width: 8%;
+    width: 10%;
   }
 }

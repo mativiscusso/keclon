@@ -8,6 +8,7 @@ header {
     .texto-header {
         position: relative;
         padding-top: 50%;
+        text-align: center;
     }
     .titulo-header {
         background-color: $negroTransparencia;
@@ -20,29 +21,10 @@ header {
         color: #fff;
         font-size: 1.1rem;
         font-weight: 600;
-        .rectangulo-titulo {
-            background-color: $verde;
-            width: 90%;
-            height: 10px;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            right: 0;
-            margin: auto;
-            z-index: 1000;
-        }
     }
-    .la-empresa {
-        background-color: $negroTransparencia;
-        width: 90%;
-        position: relative;
-
-        left: 0;
-        right: 0;
-        margin: auto;
-        padding: 1rem;
-        color: #fff;
+    .subtitulo-header {
         font-size: 1rem;
+        font-weight: 400;
     }
 }
 @media (min-width: 768px) {
@@ -57,12 +39,6 @@ header {
             width: 65%;
             line-height: 2.5rem;
         }
-        .la-empresa {
-            font-size: 1.8rem;
-            width: 50%;
-            line-height: 2.5rem;
-            padding: 2rem;
-        }
     }
 }
 @media (min-width: 1140px) {
@@ -72,42 +48,45 @@ header {
         }
         .logo-desktop {
             display: block;
-            width: 10%;
+            width: 13%;
             position: absolute;
             left: 10px;
             -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
-            padding: 1rem;
+            padding: 0.5rem 1rem;
             top: 0;
         }
         .titulo-header {
             top: 24%;
             font-size: 1.4rem;
-            width: 50%;
-            padding: 3rem;
+            width: 70%;
+            padding: 1rem;
         }
-        .la-empresa {
+        .subtitulo-header {
             font-size: 1.2rem;
-            line-height: 1.4rem;
-            padding-top: 2.5rem;
+            line-height: 1.5;
         }
         .texto-header {
-            padding-top: 11%;
+            padding-top: 18%;
         }
     }
 }
 @media (min-width: 1400px) {
     header {
         height: 100vh;
-        .la-empresa {
-            padding: 3rem;
+        .titulo-header {
+            font-size: 1.8rem;
+            padding: 2rem;
         }
-        .texto-header {
-            padding-top: 15%;
+        .subtitulo-header {
+            font-size: 1.5rem;
         }
         .logo-desktop {
-            width: 8%;
+            width: 10%;
+        }
+        .texto-header {
+            padding-top: 19%;
         }
     }
 }
