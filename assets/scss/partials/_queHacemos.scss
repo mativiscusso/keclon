@@ -150,6 +150,7 @@
         background: $negroTransparencia;
         border-radius: 1em;
         transition: 0.3s ease-out background, 0.3s ease-out transform;
+        display: none;
     }
 
     .slideshow--bullet:checked {

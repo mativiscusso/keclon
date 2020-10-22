@@ -601,6 +601,7 @@ header .subtitulo-header {
   border-radius: 1em;
   -webkit-transition: 0.3s ease-out background, 0.3s ease-out transform;
   transition: 0.3s ease-out background, 0.3s ease-out transform;
+  display: none;
 }
 
 #queHacemos .slideshow--bullet:checked {
@@ -1490,6 +1491,14 @@ footer .firma {
   width: 100%;
   text-align: center;
   font-size: 0.9rem;
+}
+
+footer svg {
+  width: 20px;
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+  fill: #1fbe6c;
 }
 
 @media (min-width: 1140px) {

@@ -1,13 +1,13 @@
 footer {
-    &::before { 
-        display: block; 
-        content: " "; 
-        margin-top: -60px; 
-        height: 60px; 
+    &::before {
+        display: block;
+        content: " ";
+        margin-top: -60px;
+        height: 60px;
         background-color: $grisOscuro;
         pointer-events: none;
-      }
-      padding-bottom: 1rem;
+    }
+    padding-bottom: 1rem;
     background-color: #000;
     .container {
         display: flex;
@@ -35,6 +35,13 @@ footer {
         width: 100%;
         text-align: center;
         font-size: 0.9rem;
+    }
+    svg {
+        width: 20px;
+        text-align: center;
+        margin: auto;
+        padding-top: 1rem;
+        fill: $verde;
     }
 }
 @media (min-width: 768px) {
