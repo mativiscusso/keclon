@@ -1163,6 +1163,7 @@ header .subtitulo-header {
 
 #prensa .map {
   margin-top: 1em;
+  z-index: 1000;
 }
 
 #prensa .map > button {
@@ -1194,6 +1195,9 @@ header .subtitulo-header {
 }
 
 @media (min-width: 986px) {
+  .map {
+    display: none;
+  }
   #prensa .center {
     padding: 4rem 0 3rem 0;
   }
