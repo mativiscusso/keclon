@@ -67,7 +67,7 @@
         }
     }
 }
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
     #equipo {
         &::before {
             display: block;
@@ -98,7 +98,6 @@
             padding: 2rem 0;
             img {
                 width: 10%;
-                height: auto;
                 padding: 1rem;
             }
         }

@@ -108,7 +108,7 @@
     animation: fade 0.2s ease-out;
     width: 100%;
     // height: 800px;
-    background-color:rgba(255,255,255,0.87);
+    background-color: rgba(255, 255, 255, 0.87);
   }
 
   @keyframes fade {
@@ -149,18 +149,18 @@
     padding: 0.2rem 0.5rem;
   }
 }
-#productos::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -60px; 
-  height: 60px; 
-  visibility: hidden; 
+#productos::before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 60px;
+  visibility: hidden;
   pointer-events: none;
 }
 
 @media (min-width: 768px) {
 }
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   #productos {
     article {
       display: flex;
@@ -179,7 +179,7 @@
       }
       .open-popup {
         font-size: 1.3rem;
-        transition: all .2s ease;
+        transition: all 0.2s ease;
       }
       .open-popup:hover {
         font-size: 1.5rem;

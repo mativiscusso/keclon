@@ -27,6 +27,7 @@ textarea {
     border: 0;
     border-radius: 1rem;
     color: white;
+    font-family: $tipografiaRegular;
 }
 #contacto form input,
 textarea {
@@ -135,7 +136,8 @@ a:active.btnForm:after {
     left: 1px;
 }
 #my-form-status {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: $verde;
 }
 #contacto::before {
     display: block;
@@ -153,7 +155,7 @@ a:active.btnForm:after {
     #contacto form input,
     textarea {
         padding: 0 1rem;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin: 0.5rem 0;
     }
 }
@@ -183,7 +185,7 @@ a:active.btnForm:after {
     #contacto form input,
     textarea {
         padding: 0.3rem;
-        font-size: 1.3rem;
+        font-size: 1rem;
         margin: 0.5rem 0;
     }
 }

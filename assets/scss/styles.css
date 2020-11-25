@@ -388,7 +388,7 @@ header .subtitulo-header {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   header .logo-mobile {
     display: none;
   }
@@ -498,8 +498,8 @@ header .subtitulo-header {
   left: 0;
   right: 0;
   margin: auto;
-  font-size: 1.1rem;
-  width: 80%;
+  font-size: 1rem;
+  width: 85%;
   z-index: 10;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -629,7 +629,7 @@ header .subtitulo-header {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   #queHacemos .slideshow {
     height: 700px;
   }
@@ -897,7 +897,7 @@ header .subtitulo-header {
   pointer-events: none;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   #productos article {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -919,8 +919,8 @@ header .subtitulo-header {
   }
   #productos article .open-popup {
     font-size: 1.3rem;
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
   #productos article .open-popup:hover {
     font-size: 1.5rem;
@@ -1015,7 +1015,7 @@ header .subtitulo-header {
   }
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   #equipo::before {
     display: block;
     content: " ";
@@ -1046,7 +1046,6 @@ header .subtitulo-header {
   }
   #equipo .container-logos img {
     width: 10%;
-    height: auto;
     padding: 1rem;
   }
   #equipo .text-center-logos {
@@ -1194,7 +1193,7 @@ header .subtitulo-header {
   width: 0.5em;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   #prensa .center {
     padding: 4rem 0 3rem 0;
   }
@@ -1250,6 +1249,7 @@ textarea {
   border: 0;
   border-radius: 1rem;
   color: white;
+  font-family: "Lato";
 }
 
 #contacto form input,
@@ -1378,7 +1378,8 @@ a:active.btnForm:after {
 }
 
 #my-form-status {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: #1fbe6c;
 }
 
 #contacto::before {
@@ -1398,7 +1399,7 @@ a:active.btnForm:after {
   #contacto form input,
   textarea {
     padding: 0 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 0.5rem 0;
   }
 }
@@ -1432,7 +1433,7 @@ a:active.btnForm:after {
   #contacto form input,
   textarea {
     padding: 0.3rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0.5rem 0;
   }
 }
@@ -1501,7 +1502,7 @@ footer svg {
   fill: #1fbe6c;
 }
 
-@media (min-width: 1140px) {
+@media (min-width: 986px) {
   footer .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
